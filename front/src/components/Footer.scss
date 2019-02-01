@@ -1,0 +1,42 @@
+.Footer{
+  background-color: rgb(40, 76, 128);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  color: white;
+  
+  .pointer {
+    cursor : pointer;
+  }
+
+  .logo{
+    width: 54%;
+  }
+
+  .logowcs {
+    width : 72%;
+  }
+
+  .ocean-cleaner{
+    font-family: 'Geometry Soft Pro Bold N';
+  }
+
+  .extras{
+    padding-top: 5%;
+  }
+
+
+  @media screen and (max-width: 1024px) {
+    .logo{
+      width: 65px;
+    }
+    .logowcs {
+      width : 65px;
+    }
+  }
+  
+
+}
+
+

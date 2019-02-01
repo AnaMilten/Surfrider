@@ -1,0 +1,63 @@
+{
+  "name": "front",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^4.1.3",
+    "moment": "^2.22.2",
+    "node-sass": "^4.10.0",
+    "odometer": "^0.4.8",
+    "react": "^16.6.3",
+    "react-document-title": "^2.0.3",
+    "react-dom": "^16.6.3",
+    "react-odometerjs": "^2.1.1",
+    "react-redux": "^5.1.1",
+    "react-rooter": "^0.1.2",
+    "react-scripts": "2.1.1",
+    "reactstrap": "^6.5.0",
+    "redux": "^4.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint src --ext js,jsx",
+    "lintjsx": "eslint src --ext jsx",
+    "build-preprod": "npm run build && rm ./build/static/**/*.map && rm -rf ../back/build/* && mv ./build/* ../back/build/",
+    "precommit": "npm run lint"
+  },
+  "eslintConfig": {
+    "extends": "airbnb",
+    "parser": "babel-eslint",
+    "env": {
+      "es6": true,
+      "browser": true
+    },
+    "parserOptions": {
+      "sourceType": "module"
+    },
+    "rules": {
+      "react/jsx-filename-extension": [
+        "js",
+        "jsx"
+      ],
+      "jsx-a11y/href-no-hash": "off",
+      "jsx-a11y/mouse-events-have-key-events": "off",
+      "react/prop-types": "off",
+      "no-shadow": "off",
+      "jsx-a11y/click-events-have-key-events": "off",
+      "jsx-a11y/no-noninteractive-element-interactions": "off"
+    }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "eslint-config-airbnb": "^17.1.0",
+    "husky": "^1.1.4"
+  }
+}

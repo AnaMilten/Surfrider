@@ -1,0 +1,8 @@
+.cheatbutton {
+  width: 46%;
+}
+@media screen and (max-width: 1024px) {
+  .cheatbutton{
+    width: 90px;
+  }
+}

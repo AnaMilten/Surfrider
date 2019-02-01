@@ -1,0 +1,17 @@
+.Layout{
+  padding-bottom: 5em;
+  height: 100%;
+}
+
+@media screen and (min-width: 736px) and (max-width: 1024px) and (orientation:landscape) {
+  .game-action.col-sm-12.col-lg-4 {
+    padding: 0px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .Layout{
+    padding-bottom: 10em;
+  }
+}
+

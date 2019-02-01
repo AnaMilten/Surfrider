@@ -1,0 +1,60 @@
+$lightblue: #31c5df;
+
+.GameActions{
+  background-color: rgb(255, 255, 255);
+  height: 80vh;
+  text-align: center;
+  overflow-y: scroll; 
+
+  .rowgame{
+    justify-content: center;
+    border: $lightblue solid 1px;
+    padding-top: 3px;
+  }
+   
+  .title{
+    background-color: $lightblue;
+    border-top-left-radius:10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .col-store{
+    filter: grayscale(100%)
+  }
+  
+  .square{
+    border: $lightblue solid 1px;
+  }
+  
+  .modal-text {
+    font-size: 13px;
+    margin-bottom: 3px
+  }
+
+  .actions-icons{
+    height: auto; 
+    width: auto; 
+    cursor: grab;
+  }
+  
+  .actions-icons:active{
+    transform: scale(0.9);
+    transition: transform .1s;
+    cursor: grabbing;
+  }
+
+  .powerup-button {
+    cursor: pointer;
+  }
+}
+
+.GameActions.piper.container {
+  padding: 0px;
+}
+
+@media screen and (min-width: 736px) and (max-width: 1024px) and (orientation:landscape) {
+  .GameActions .modal-text {
+    font-size: 0.7em;
+  } 
+}
+

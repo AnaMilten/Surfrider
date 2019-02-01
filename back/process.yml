@@ -1,0 +1,9 @@
+apps:
+  - script   : './bin/start'
+    name     : 'surfrider'
+    exec_mode: 'cluster'
+    instances: 1
+    env:
+        "NODE_ENV": "production"
+        "PORT": 6300
+    source_map_support: false
